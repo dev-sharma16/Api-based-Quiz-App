@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active " id="settingsUP" data-tab="settings">⚙️ Settings</div>
+        <div class="tab " id="gameUP" data-tab="game">🎮 Game</div>
+        <div class="tab" id="scoreboardUP" data-tab="scoreboard">🏆 Scoreboard</div>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div class="tab-content active" id="settings">
+        <h2>⚙️ Settings</h2>
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="9">General Knowledge</option>
+            <option value="18">Science & Computers</option>
+            <option value="21">Sports</option>
+            <option value="11">Film</option>
+            <option value="20">Mythology</option>
+            <option value="15">Video Games</option>
+            <option value="28">Vehicles</option>
+            <option value="32">Cartoon & Animation</option>
+            <option value="31">Anime & Manga</option>
+        </select>
+        <br>
+
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button id="startGame">Start Quiz</button>
+    </div>
+
+    <div class="tab-content " id="game">
+        <h2>🎮 Quiz Game</h2>
+        <p id="noGm">Game will start when you click "Start Quiz" in settings.</p>
+        <div id="quiz-container">
+            <h2 id="question">Question will appear here...</h2>
+            
+            <div id="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="option1">
+                    <span id="option1">Option 1</span>
+                </label>
+                
+                <label class="option">
+                    <input type="radio" name="answer" value="option2">
+                    <span id="option2">Option 2</span>
+                </label>
+                
+                <label class="option">
+                    <input type="radio" name="answer" value="option3">
+                    <span id="option3">Option 3</span>
+                </label>
+                
+                <label class="option">
+                    <input type="radio" name="answer" value="option4">
+                    <span id="option4">Option 4</span>
+                </label>
+            </div>
+            <button id="submitAnswer">Submit Answer</button>
+        </div>
+    </div>
+
+    <div class="tab-content" id="scoreboard">
+        <h2>🏆 Scoreboard</h2>
+        <p id="noSc">No scores yet. Play a game to see scores here.</p>
+        <div class="plyrsList" id="plyrsList">
+             <div class="player">
+                <p>Player name</p>
+                <p>--/10</p>
+             </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #222;
+    padding: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.tab.active {
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* Tab Content Styles */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: white;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-height:fit-content ;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Settings Form */
+select, button {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6b800;
+}
+#quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+#options{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    width: 40vw;
+    max-width: fit-content;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+#question{
+    margin-top: 10px;
+}
+#nameScr{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(162, 162, 162);
+    padding: 2px 10px;
+}
+
+.plyrsList{
+    /* background-color: #e6b800; */
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.player{
+    background-color: #f9f9f9;
+    width: 75%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 0px 30px;
+    border: 2px solid #ffcc00;
+}
+#scoreboard h2{
+    /* background-color: #e6b800; */
+    margin-bottom: 15px;
+}
